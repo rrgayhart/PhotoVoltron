@@ -1,0 +1,9 @@
+<%= form_for(@array)  do |f| %>
+  <%= f.label :desired_peak_power %>
+  <%= f.text_field :desired_peak_power %>
+
+  <%= f.label :module_efficiency %>
+  <%= f.text_field :module_efficiency %>
+
+  <%= f.submit %>
+<% end %>

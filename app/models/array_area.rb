@@ -1,5 +1,18 @@
 class ArrayArea
   require 'mathn'
+  extend ActiveModel::Naming
+  include ActiveModel::Conversion
+
+  attr_accessor :desired_peak_power, :module_efficiency
+
+  def persisted?
+    false
+  end
+
+  def initialize
+    @desired_peak_power = ""
+    @module_efficiency = ""
+  end
 
   def display_array_area(p,n)
     area = display_singular(estimated_array_area(p,n))

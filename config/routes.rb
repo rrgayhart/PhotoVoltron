@@ -1,6 +1,6 @@
 PhotoVoltron::Application.routes.draw do
 
-  get "areatool" => "array_areas#new", as: 'array'
+  resources :array_areas, :path => 'area-tool'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
