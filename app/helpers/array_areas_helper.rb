@@ -1,0 +1,2 @@
+module ArrayAreasHelper
+end
