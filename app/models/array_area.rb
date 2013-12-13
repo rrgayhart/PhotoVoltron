@@ -1,18 +1,13 @@
 class ArrayArea
   require 'mathn'
 
-  def initialize(p,n)
-    @desired_peak_array_power = p
-    @module_efficiency = to_fraction(n)
-  end
-
-  def display_array_area
-    area = display_singular(estimated_array_area)
+  def display_array_area(p,n)
+    area = display_singular(estimated_array_area(p,n))
     return "#{area}m squared"
   end
 
-  def estimated_array_area
-    @desired_peak_array_power / ((kw/meter_squared(1)) * @module_efficiency)
+  def estimated_array_area(p,n)
+    p / ((kw/meter_squared(1)) * (to_fraction(n)))
   end
 
   def to_fraction(percent)
