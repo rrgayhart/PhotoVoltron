@@ -28,7 +28,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 
-# Section for google maps gems
+# Section for location based gems
 gem 'geokit-rails'
 
 group :doc do

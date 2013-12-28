@@ -47,4 +47,8 @@ class ArrayArea
     kw * meter_squared(1)
   end
 
+  def harrisburg_weather
+    @response = HTTParty.get('http://api.worldweatheronline.com/free/v1/search.ashx', query: {q: "Harrisburg", num_of_results: 1, format: 'json', key: "wcsxxhj8bvt9mrnmhzzxp2dz"})
+  end
+
 end
