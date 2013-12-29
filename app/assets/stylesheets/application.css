@@ -35,6 +35,7 @@
  }
 
  b, strong, a {
+  text-decoration: none;
   color: #34495e;
   font-weight: 500;
  }
@@ -44,6 +45,10 @@
   padding-left: 12px;
   margin-right: auto;
   margin-left: auto;
+ }
+
+ .page-head {
+  background-color: white;
  }
 
  .site-nav {
@@ -81,5 +86,6 @@
  }
 
  .logo {
-  background-position: -5px -5px;
+  padding-top: 20px;
+  padding-left: 20px;
  }
