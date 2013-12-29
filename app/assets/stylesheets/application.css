@@ -24,7 +24,14 @@
  }
 
  body {
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 0;
   -webkit-font-smoothing: antialiased;
+ }
+
+ div {
+  display: block;
  }
 
  b, strong, a {
@@ -35,7 +42,6 @@
  .wrapper {
   padding-right: 12px;
   padding-left: 12px;
-  max-width: 620px;
   margin-right: auto;
   margin-left: auto;
  }
@@ -43,6 +49,7 @@
  .site-nav {
   margin-bottom: 0px;
   line-height: 64px;
+  display: inline-block;
  }
 
  .nav {
@@ -53,6 +60,18 @@
  .ul {
   margin: 0;
   padding: 0;
+ }
+
+ .site-nav>li {
+  font-size: 30px;
+  margin-left: 5px;
+  padding-right: 10px;
+  display: inline-block;
+ }
+
+ .nav>li>a {
+  display: inline-block;
+  zoom: 1;
  }
 
  .logo img {
