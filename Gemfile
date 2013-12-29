@@ -1,10 +1,20 @@
 source 'https://rubygems.org'
-
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
+gem 'foundation-rails'
+gem 'sorcery'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+group :test, :development do
+  gem 'rspec-rails', '~> 3.0.0.beta'
+  gem "capybara"
+  gem 'shoulda-matchers'
+  gem 'factory_girl_rails'
+  gem 'pg'
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -27,17 +37,9 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-
-# Section for location based gems
-gem 'geokit-rails'
-
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
-end
-
-group :development, :test do
-  gem 'rspec-rails'
 end
 
 # Use ActiveModel has_secure_password
