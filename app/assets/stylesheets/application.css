@@ -47,13 +47,17 @@
   margin-left: auto;
  }
 
+ .content{
+  padding-top: 20px;
+ }
+
  .page-head {
+  vertical-align: bottom;
   background-color: white;
  }
 
  .site-nav {
   margin-bottom: 0px;
-  line-height: 64px;
   display: inline-block;
  }
 
@@ -68,9 +72,9 @@
  }
 
  .site-nav>li {
-  font-size: 30px;
+  font-size: 50px;
   margin-left: 5px;
-  padding-right: 10px;
+  padding-right: 20px;
   display: inline-block;
  }
 
@@ -79,13 +83,4 @@
   zoom: 1;
  }
 
- .logo img {
-  display: block;
-  border-radius: 2px;
-  top: 0;
- }
 
- .logo {
-  padding-top: 20px;
-  padding-left: 20px;
- }
