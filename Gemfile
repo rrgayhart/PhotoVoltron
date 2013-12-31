@@ -4,6 +4,7 @@ gem 'foundation-rails'
 gem 'sorcery'
 
 group :test, :development do
+  gem 'coveralls', require: false
   gem 'rspec-rails', '~> 3.0.0.beta'
   gem "capybara"
   gem 'shoulda-matchers'
